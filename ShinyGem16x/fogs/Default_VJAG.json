@@ -1,0 +1,40 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+      "description": {
+        "identifier": "skye:custom_fog_default"
+      },
+      "distance": {
+      "air": {
+        "fog_start": 0,
+        "fog_end": 0.9,
+        "fog_color": "#8407e3",
+        "render_distance_type": "render"
+      },
+      "water": {
+        "fog_start": 0,
+        "fog_end": 96,
+        "fog_color": "#2300c7",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0,
+        "fog_end": 225,
+        "fog_color": "#8407e3",
+        "render_distance_type": "fixed"
+      },
+      "lava": {
+        "fog_start": 0,
+        "fog_end": 8,
+        "fog_color": "#e01300",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 0,
+        "fog_end": 16,
+        "fog_color": "#e01300",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

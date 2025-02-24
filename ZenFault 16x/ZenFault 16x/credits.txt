@@ -1,0 +1,24 @@
+Credits:
+
+@pixelstoriez - for the "diamond.png" design (and the "emerald.png" was a diamond with other colors)
+and for the ingots design (for real, this guy gave me texture pack making lessons!!!)
+
+@TheOctazen - for the custom UI and transparent fire tutorials
+
+Apps used:
+
+Paint.net (Almost every textures in this pack was made in Paint.net)
+
+Visual Studio Code (Every .JSONs were edited in VS Code)
+
+Cube The Sphere (was used to make the sky boxes and panorama)
+
+Blockbench (i made a custom title with this program)
+
+PicsArt (was used to make pack icon background)
+
+Canva (i edited the rest of the icon in Canva)
+
+Minecraft AddOns Maker - MAM (was used to resize the items that i put in the icon)
+
+Pixel Studio (i made some textures on my phone, and i use this app for it)

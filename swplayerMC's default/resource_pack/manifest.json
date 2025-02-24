@@ -1,0 +1,52 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§2Follow my §4You§fTube§2! §eswplayerMC",
+    "name": "§l§bswplaterMC§r's §aDefault§r §l[§b16x§f§l]§r",
+    "uuid": "628252f1-1e7d-4166-ab6d-a91065ab36d9",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§2Follow my §4You§fTube§2! §eswplayerMC",
+      "type": "resources",
+      "uuid": "f019d12a-c579-4455-9eb8-4e444df97378",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "Day Sky",
+      "name": "§bDay §fSky",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "Evening Sky",
+      "name": "§6Evening §fSky",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "Night Sky",
+      "name": "§dNight §fSky",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "Cloudy Sky",
+      "name": "§7Cloudy §fSky",
+      "memory_tier": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made by §7Mqximus§r",
+        "name": "§9Zen§bFault§r §l[§b16§8x§f]§r",
+        "uuid": "eb2c821a-1b6d-42aa-9071-96ac5ba47cfc",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Made by §7Mqximus§r",
+            "type": "resources",
+            "uuid": "dc17af70-0d1f-4038-b4e9-4a9a6ff4d1e2",
+            "version": [1, 0, 0]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "Day Sky",
+            "name": "§bDay §rSky",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Evening Sky",
+            "name": "§6Evening §rSky",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Night Sky",
+            "name": "§9Night §rSky",
+            "memory_tier": 1
+        }
+    ]
+}

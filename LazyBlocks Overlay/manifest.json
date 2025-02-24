@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made by §7Mqximus",
+        "name": "§l§aLazy§bBlocks §7Overlay§r",
+        "uuid": "575ce860-9b89-49ea-a2b8-8c1da8987b90",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Made by §7Mqximus",
+            "type": "resources",
+            "uuid": "65472a72-6526-4608-aa40-bcca3ebb16e9",
+            "version": [1, 0, 0]
+        }
+    ]
+}

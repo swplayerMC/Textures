@@ -1,0 +1,15 @@
+PC:
+
+cd "D:/ShinyGem-16x" ; ls
+
+
+
+CELULAR:
+
+cd .. && cd .. && cd .. && cd .. && cd .. && cd storage/emulated/0/'(2) My packs'/ShinyGem-16x && ls
+
+(ir da "data/data” [a pasta quase inacessível] pra "(2) My packs/ShinyGem-16x" de uma vez)
+
+
+NUNCA ESQUEÇA DE USAR GIT PUSH/ADD/PULL 
+PRINCIPALMENTE QUANDO EDITAR ALGO PELO CELULAR

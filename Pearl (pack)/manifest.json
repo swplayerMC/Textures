@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Work in progress... And it's like a recolor/remake of '§l§aShinyGem§r §l[§r §b16§7x§r §l]§r' ",
+        "name": "§r§l[§r §dPearl§r §f§l]§r",
+        "uuid": "13512cb3-0b70-4859-800b-1918461fbec6",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Work in progress... And it's like a recolor/remake of '§l§aShinyGem§r §l[§r §b16§7x§r §l]§r' ",
+            "type": "resources",
+            "uuid": "08f052c3-7808-4140-9802-a45ca706cb53",
+            "version": [1, 0, 0]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made by §7Mqximus§r to use with ZenFault pack",
+        "name": "Andesite Overlay for §9Zen§bFault§r §l[§b16§8x§f]§r",
+        "uuid": "d94f6063-7a60-499a-9918-0775933042b3",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Made by §7Mqximus§r to use with ZenFault pack",
+            "type": "resources",
+            "uuid": "b2236577-9121-4ec1-b7e0-0d3104586e96",
+            "version": [1, 0, 0]
+        }
+    ]
+}

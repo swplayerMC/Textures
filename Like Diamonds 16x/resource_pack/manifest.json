@@ -1,0 +1,40 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made by §7Mqximus",
+        "name": "§9Like §l§bDiamonds§r §k[§r§b16§7x§r§k]§r",
+        "uuid": "ac1a0139-f385-48dc-b975-3326f3beaa17",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Made by §7Mqximus",
+            "type": "resources",
+            "uuid": "529069f1-d162-40ad-9ed4-14f1a7f5901d",
+            "version": [1, 0, 0]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "Cloudy Sky",
+            "name": "§7Cloudy §fSky§r",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Day Sky",
+            "name": "§bDay §fSky§r",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Evening Sky",
+            "name": "§6Evening §fSky§r",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Night Sky",
+            "name": "§0Night §fSky§r",
+            "memory_tier": 1
+        }
+    ]
+}

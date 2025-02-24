@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§2Follow my §4You§fTube§2! §eswplayerMC",
+    "name": "§9Sky Fight§b! §f[16x]",
+    "uuid": "628252f1-1e7d-4166-ab6d-a91065ab36d9",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§2Follow my §4You§fTube§2! §eswplayerMC",
+      "type": "resources",
+      "uuid": "f019d12a-c579-4455-9eb8-4e444df97378",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
