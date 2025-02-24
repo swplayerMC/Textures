@@ -1,0 +1,30 @@
+{
+  "header": {
+    "uuid": "6e213adf-71a6-4aca-a647-5a83047b818b",
+    "name": "§l§2Forrest §7Revamp §f[32x]",
+    "description": "§l§fCreated by §aKeno §fand Ported by §cKrynotic",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      2,
+      6
+    ]
+  },
+  "modules": [
+    {
+      "description": "§4Subscribe to Krynotic",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "uuid": "7d04a87c-598c-480a-91d1-7f80305c59e0",
+      "type": "resources"
+    }
+  ],
+  "format_version": 1
+}

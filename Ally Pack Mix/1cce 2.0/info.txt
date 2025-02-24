@@ -1,0 +1,18 @@
+Works on all versions as of 12/30/22.
+
+Credits:
+
+Goofy sound effects by 1cce
+
+Some items were modified by 1cce due to some bugs and missing textures, and most textures were not made by 1cce, except netherite gear and certain outlined blocks.
+
+16x Swords: Sunset 16x (diamond sword modified by 1cce)
+
+Original 1.8 Java pack (older blocks): Huahwi PVP
+
+Newer blocks: Faithful 64x64
+
+Fire: ShantVFinal
+
+
+1.0 Pack release video: https://www.youtube.com/watch?v=sl1iZxUvBfk

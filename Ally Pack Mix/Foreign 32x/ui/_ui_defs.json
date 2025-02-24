@@ -1,0 +1,11 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "ui_defs": [
+    "uidx/animated_ui/animated_text.uidx",
+    "uidx/animated_ui/animated_ui_template.uidx",
+    "uidx/animated_ui/hud/xp_bar.uidx",
+    "uidx/animated_ui/hud/xp_number.uidx",
+    "uidx/common_sections/ui_common.uidx"
+  ]
+}

@@ -1,0 +1,3 @@
+blocks (other than wool) + items (food, the ones that just are from practically every single pack, etc) + pearl and eye of ender: Faithful 32x
+bow (pulling animation and standby) + arrow: Bedwars 32x
+tools (hoe, pickaxe, shovel, and axe) but recoloured and changed saturation: Cranexe 30k (which i helped make + made the tools and sword for that pack)

@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Made by §3CrazyBaby, §3 Itzumi, §3Otter, §3Friday",
+        "name": "§b§lJit§3§lR §8§l[§b§l20§3§lk§8§l] §8§l- [§7§lTHIN SHORT§8§l]",
+        "uuid": "47465548-91b3-11ed-a1eb-0242ac120002",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 18, 0 ]
+    },
+    "modules": [
+        {
+            "description": "×",
+            "type": "resources",
+            "uuid": "a2aef860-91b1-11ed-a1eb-0242ac120002",
+            "version": [0, 0, 0]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "exp_progress_bar_and_hotbar/xp_bar": {
+    "controls": [
+      { "progress_text_label@hud_resources_dx.xp_number_panel": { "layer": 8 } },
+      { "experience_bar_empty@CrisXolt_anm_xp_bar.empty_xp_bar_texture": { "layer": 5 } },
+      { "experience_bar_full@CrisXolt_anm_xp_bar.full_xp_bar_texture": { "layer": 6 } }
+    ]
+  }
+}

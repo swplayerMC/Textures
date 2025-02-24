@@ -1,0 +1,109 @@
+// __multiversion__
+#include "fragmentVersionCentroid.h"
+#include "uniformShaderConstants.h"
+#include "util.h"
+
+#include "function/tonemap.glsl"
+#include "function/light.glsl"
+#include "function/compute.glsl"
+
+#if __VERSION__ >= 300
+	#ifndef BYPASS_PIXEL_SHADER
+		#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+			_centroid in highp vec2 uv0;
+			_centroid in highp vec2 uv1;
+		#else
+			_centroid in vec2 uv0;
+			_centroid in vec2 uv1;
+		#endif
+	#endif
+#else
+	#ifndef BYPASS_PIXEL_SHADER
+		varying vec2 uv0;
+		varying vec2 uv1;
+	#endif
+#endif
+
+varying vec4 color;
+
+#ifdef FOG
+varying vec4 fogColor;
+#endif
+
+varying vec4 haze;
+varying float uncolor;
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_2;
+
+void main()
+{
+	#ifdef BYPASS_PIXEL_SHADER
+		gl_FragColor = vec4(0, 0, 0, 0);
+		return;
+	#else 
+		#if USE_TEXEL_AA
+			vec4 diffuse = texture2D_AA(TEXTURE_0, uv0);
+		#else
+			vec4 diffuse = texture2D(TEXTURE_0, uv0);
+		#endif
+
+		vec2 newUV1 = vec2(uv1.x, max(0.8 * uv1.y, pow(uv1.y, 3.0)));
+		vec4 ambient = texture2D(TEXTURE_1, newUV1);
+		float skyexp = texture2D(TEXTURE_1, vec2(0.0, uv1.y)).g;
+		
+		diffuse.rgb = mix(diffuse.rgb + lightSource(vec3(1.0, 0.6, 0.2), uv1.x), diffuse.rgb, skyexp);
+			
+		#ifdef SEASONS_FAR
+			diffuse.a = 1.0;
+		#endif
+
+		#if USE_ALPHA_TEST
+			#ifdef ALPHA_TO_COVERAGE
+				#define ALPHA_THRESHOLD 0.05
+			#else
+				#define ALPHA_THRESHOLD 0.5
+			#endif
+			if(diffuse.a < ALPHA_THRESHOLD) discard;
+		#endif
+
+		vec4 inColor = color;
+
+		#if defined(BLEND)
+			diffuse.a *= inColor.a;
+		#endif
+
+		#if !defined(ALWAYS_LIT)
+			float checkSky = max(uv1.y * 0.3, 0.2);
+			diffuse *= max(ambient, checkSky);
+		#endif
+
+		#ifndef SEASONS
+			#if !USE_ALPHA_TEST && !defined(BLEND)
+				diffuse.a = inColor.a;
+			#endif
+			
+			diffuse.rgb *= inColor.rgb;
+		#else
+			vec2 uv = inColor.xy;
+			diffuse.rgb *= mix(vec3(1.0,1.0,1.0), texture2D( TEXTURE_2, uv).rgb*2.0, inColor.b);
+			diffuse.rgb *= inColor.aaa;
+			diffuse.a = 1.0;
+		#endif
+
+		diffuse.rgb = GBias(diffuse.rgb);
+
+		#ifdef FANCY
+			vec3 mono = polarize3(diffuse.rgb);
+			diffuse.rgb = mix(mono, diffuse.rgb, uncolor);
+		#endif
+
+		#ifdef FOG
+			diffuse.rgb = mix( diffuse.rgb, fogColor.rgb, fogColor.a );
+		#endif
+		diffuse.rgb = mix(diffuse.rgb, haze.rgb, haze.a);
+
+		gl_FragColor = diffuse;
+	#endif
+}

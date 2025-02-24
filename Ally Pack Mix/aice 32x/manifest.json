@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§lby §eaixiine ; §6for §l§o§4Bladienala",
+        "name": "≤≥§l§eA§6I§eC§6E §6[§432§6] §r§f≥≤",
+        "uuid": "c4bd1caa-f3c5-11ec-b939-0242ac120002",
+        "version": [2, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+    "modules": [
+        {
+            "description": "§l§oby §eaixiine",
+            "type": "resources",
+            "uuid": "c2bd1caa-f3c5-11ec-b939-0242ac120002",
+            "version": [2, 0, 0]
+}
+],
+"subpacks": [
+{
+"folder_name": "DAY SKY",
+"name": "§eday §6sky",
+"memory_tier": 1
+},
+{
+"folder_name": "NIGHT SKY",
+"name": "§6night §4sky",
+"memory_tier": 1
+        }
+    ]
+}

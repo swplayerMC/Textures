@@ -1,0 +1,32 @@
+{
+  "cubemap": {
+    "defines": [
+      "YPOSFIX",
+      "CUBEMAP"
+    ],
+    
+    "states": [
+      "Blending"
+    ],
+
+    "blendSrc": "SourceAlpha",
+    "blendDst": "OneMinusSrcAlpha",
+
+    "vertexShader": "shaders/cubemap.cxvt",
+    "vrGeometryShader": "shaders/uv.geometry",
+    "fragmentShader": "shaders/cubemap.cxfr",
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureFilter": "Point"
+      }
+    ],
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "msaaSupport": "Both"
+
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§1Made §dBy §0Lui",
+    "name": "§6For§deign",
+    "uuid": "7cc71a46-a819-4409-bb2c-7f8144e4a7b2",
+    "version": [2, 2, 8],
+    "min_engine_version": [1, 20, 10]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "2dd6f548-ce00-4a9f-b83b-45908052d105",
+      "version": [2, 2, 8]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "32x",
+      "name": "32x HD Version",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "16x",
+      "name": "16x Default Version",
+      "memory_tier": 1
+    }
+  ]
+}

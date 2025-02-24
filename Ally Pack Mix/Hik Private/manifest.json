@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§7by Hik obviously",
+        "name": "§l§t Hik's Legacy",
+        "uuid": "465ebca4-7ef5-4614-8fad-a09866408514",
+        "version": [3, 0, 0],
+        "min_engine_version": [1, 14, 0],
+        "vanilla": [1, 14, 0]
+    },
+    "modules": [
+        {
+            "description": "Hikqrii",
+            "type": "resources",
+            "uuid": "823aca0c-19c8-41b4-a551-117a8789807d",
+            "version": [0, 0, 1]
+        }
+     ]
+}

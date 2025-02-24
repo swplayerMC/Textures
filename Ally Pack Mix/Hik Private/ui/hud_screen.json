@@ -1,0 +1,196 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "hotbar_slot_image": {
+    "alpha": 1.0
+  },
+
+  "start_cap_image": {
+    "alpha": 1.0
+  },
+
+  "gui_hotbar_grid_item/hotbar_parent": {
+    "layer": 10
+  },
+
+  "horse_jump_renderer": {
+    "ignored": true
+  },
+
+  "dash_renderer": {
+    "ignored": true
+  },
+
+  "exp_progress_bar_and_hotbar": {
+    "ignored": false,
+    "controls": [
+      {
+        "horse_jumping": {
+          "type": "panel", "size": [ "100%c", 5 ], 
+          "controls": [
+            {
+              "normal": {
+                "type": "panel", "size": [ "100%c", 5 ],
+                "bindings": [ { "binding_name": "(not #inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "horse_jump_rend@hud.horse_jump_renderer": { "ignored": false, "size": [ 182, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } },
+                  { "dash_rend@hud.dash_renderer": { "ignored": false, "size": [ 182, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } }
+                ]
+              }
+            },
+            {
+              "touch": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(#inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "horse_jump_rend@hud.horse_jump_renderer": { "ignored": false, "size": [ 202, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } },
+                  { "dash_rend@hud.dash_renderer": { "ignored": false, "size": [ 202, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "xp_bar": {
+          "type": "panel", "size": [ "100%c", 5 ], "bindings": [ { "binding_name": "#show_survival_ui", "binding_name_override": "#visible" } ],
+          "controls": [
+            {
+              "normal": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(not #inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "experience_bar_full@CrisXolt_anm_xp_bar.full_xp_bar_texture": { } },
+                  { "experience_bar_empty@CrisXolt_anm_xp_bar.empty_xp_bar_texture": { } }
+                ]
+              }
+            },
+            {
+              "touch": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(#inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "touch_experience_bar_full@CrisXolt_anm_xp_bar.touch_full_xp_bar_texture": { } },
+                  { "touch_experience_bar_empty@CrisXolt_anm_xp_bar.touch_empty_xp_bar_texture": { } }
+                ]
+              }
+            },
+            { "progress_text_label@CrisXolt_anm_xp_number.xp_number_panel": { "offset": [ 0, -10 ], "layer": 7 } }
+          ]
+        }
+      },
+      { "hotbar@hud.hotbar_chooser": { "offset": [ 4, 15.5 ] } },
+      { "item_text_factory": { "size": [ 100, 10 ], "type": "factory", "control_ids": { "item_text": "@hud.item_name_text", "jukebox_text": "@hud.jukebox_popup_text" } } }
+    ]
+  },
+
+  "exp_progress_bar_and_hotbar_pocket": {
+    "ignored": false,
+    "controls": [
+      {
+        "horse_jumping": {
+          "type": "panel", "size": [ "100%c", 5 ], 
+          "controls": [
+            {
+              "normal": {
+                "type": "panel", "size": [ "100%c", 5 ], "anchor_from": "bottom_middle", "anchor_to": "bottom_middle",
+                "bindings": [ { "binding_name": "(not #inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "horse_jump_rend@hud.horse_jump_renderer": { "ignored": false, "size": [ 182, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } },
+                  { "dash_rend@hud.dash_renderer": { "ignored": false, "size": [ 182, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } }
+                ]
+              }
+            },
+            {
+              "touch": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(#inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "horse_jump_rend@hud.horse_jump_renderer": { "ignored": false, "size": [ 202, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } },
+                  { "dash_rend@hud.dash_renderer": { "ignored": false, "size": [ 202, 5 ], "anchor_from": "top_middle", "anchor_to": "top_middle", "offset": [ 0, 0 ], "layer": 7, "bindings": [ { "binding_name": "#is_riding", "binding_name_override": "#visible" } ] } }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "xp_bar": {
+          "type": "panel", "anchor_from": "bottom_middle", "anchor_to": "bottom_middle", "size": [ "100%c", 5 ], "bindings": [ { "binding_name": "#show_survival_ui", "binding_name_override": "#visible" } ],
+          "controls": [
+            {
+              "normal": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(not #inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "experience_bar_full@CrisXolt_anm_xp_bar.full_xp_bar_texture": { } },
+                  { "experience_bar_empty@CrisXolt_anm_xp_bar.empty_xp_bar_texture": { } }
+                ]
+              }
+            },
+            {
+              "touch": {
+                "type": "panel", "size": [ "100%c", 5 ], 
+                "bindings": [ { "binding_name": "(#inventory_touch_button)", "binding_name_override": "#visible", "binding_type": "global" } ],
+                "controls": [
+                  { "touch_experience_bar_full@CrisXolt_anm_xp_bar.touch_full_xp_bar_texture": { } },
+                  { "touch_experience_bar_empty@CrisXolt_anm_xp_bar.touch_empty_xp_bar_texture": { } }
+                ]
+              }
+            },
+            { "progress_text_label@CrisXolt_anm_xp_number.xp_number_panel": { "offset": [ 0, -10 ], "layer": 7 } }
+          ]
+        }
+      },
+      { "hotbar_panel@hotbar_panel_pocket": { } },
+      {
+        "item_text": {
+          "type": "panel",
+          "offset": [ 0, 0 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "use_anchored_offset": true,
+          "property_bag": {
+            "#anchored_offset_value_y": 0.0
+          },
+          "bindings": [
+            {
+              "binding_name": "#exp_bar_and_text_offset_y",
+              "binding_name_override": "#anchored_offset_value_y"
+            }
+          ],
+          "controls": [
+            {
+              "item_text_factory": {
+                "size": [ 100, 10 ],
+                "type": "factory",
+                "control_ids": {
+                  "item_text": "@hud.item_name_text_root",
+                  "jukebox_text": "@hud.jukebox_popup_text"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "root_panel": {
+    "$xp_control_offset|default": [ 0, -13 ],
+    "variables": [
+      {
+        "requires": "(not $desktop_screen)",
+        "$xp_control_offset": [ 0, -13 ]
+      },
+      {
+        "requires": "$education_edition",
+        "$left_helpers": "hud.left_helpers_edu"
+      },
+      {
+        "requires": "(not $education_edition)",
+        "$left_helpers": "hud.left_helpers"
+      }
+    ]
+  }
+}

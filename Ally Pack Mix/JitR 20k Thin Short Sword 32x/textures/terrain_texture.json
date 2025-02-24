@@ -1,0 +1,102 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+
+  "texture_data": {
+    "crimson_nylium_side": {
+      "textures": "textures/blocks/crimson_nylium_top"
+    },
+    "dirt_podzol_side": {
+      "textures": "textures/blocks/dirt_podzol_top"
+    },
+    "grass_side": {
+      "textures": "textures/blocks/grass_top"
+    },
+    "grass_path_side": {
+      "textures": [
+        "textures/blocks/grass_path_top"
+      ]
+    },
+    "grass_side": {
+      "textures": [
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        {
+          "path": "textures/blocks/grass_carried",
+          "overlay_color": ""
+        },
+        "textures/blocks/snow"
+      ]
+    },
+    "mycelium_side": {
+      "textures": [
+        "textures/blocks/mycelium_top",
+        "textures/blocks/snow"
+      ]
+    },
+    "warped_nylium_side": {
+      "textures": "textures/blocks/warped_nylium_top"
+    }
+  }
+}
+

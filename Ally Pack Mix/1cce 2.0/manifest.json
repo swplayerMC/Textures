@@ -1,0 +1,19 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§b1cce pack mix but second generation yay",
+    "name": "§b§l1cce Mix 2.0",
+    "platform_locked": false,
+    "uuid": "0917d0f0-f806-4a37-bef0-d2a69747986f",
+    "version": [1, 0, 0],
+    "min_engine_version": [ 1, 16, 0 ]
+  },
+  "modules": [
+    {
+      "description": "§b1cce pack mix but second generation yay",
+      "type": "resources",
+      "uuid": "a4d56de5-ad63-480f-ab77-3709dc4607ae",
+      "version": [1, 0, 0]
+    }
+  ]
+}

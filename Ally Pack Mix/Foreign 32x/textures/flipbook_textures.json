@@ -1,0 +1,86 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/diamond_ore",
+    "atlas_tile": "diamond_ore",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/gold_ore",
+    "atlas_tile": "gold_ore",
+    "ticks_per_frame": 3
+  },
+  {
+    "flipbook_texture": "textures/blocks/emerald_ore",
+    "atlas_tile": "emerald_ore",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/redstone_ore",
+    "atlas_tile": "redstone_ore",
+    "ticks_per_frame": 3
+  },
+  {
+    "flipbook_texture": "textures/blocks/coal_ore",
+    "atlas_tile": "coal_ore",
+    "ticks_per_frame": 3
+  },
+  {
+    "flipbook_texture": "textures/blocks/iron_ore",
+    "atlas_tile": "iron_ore",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/lapis_ore",
+    "atlas_tile": "lapis_ore",
+    "ticks_per_frame": 3
+  },
+  {
+    "flipbook_texture": "textures/blocks/water_still",
+    "atlas_tile": "still_water",
+    "ticks_per_frame": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/water_flow",
+    "atlas_tile": "flowing_water",
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/cauldron_water",
+    "atlas_tile": "cauldron_water",
+    "ticks_per_frame": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_still",
+    "atlas_tile": "still_lava",
+    "ticks_per_frame": 16
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_flow",
+    "atlas_tile": "flowing_lava",
+    "ticks_per_frame": 10,
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/portal",
+    "atlas_tile": "portal"
+  },
+  {
+    "flipbook_texture": "textures/blocks/sea_lantern",
+    "atlas_tile": "sea_lantern",
+    "ticks_per_frame": 5
+  }
+]
+ "flipbook_texture": "textures/items/ender_pearl",
+    "atlas_tile": "ender_pearl",
+    "ticks_per_frame": 4
+  }
+]
+ "flipbook_texture": "textures/items/emerald",
+    "atlas_tile": "emerald",
+    "ticks_per_frame": 4
+  }
+]
+ "flipbook_texture": "textures/items/diamond",
+    "atlas_tile": "diamond",
+    "ticks_per_frame": 4
+

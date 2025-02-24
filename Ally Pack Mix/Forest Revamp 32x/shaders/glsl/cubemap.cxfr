@@ -1,0 +1,89 @@
+//File modified by @CrisXolt.
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+
+#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+_centroid in highp vec2 uv;
+#else
+_centroid in vec2 uv;
+#endif
+
+#else
+
+varying vec2 uv;
+#endif
+
+#include "uniformShaderConstants.h"
+#include "uniformPerFrameConstants.h"
+#include "util.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+
+void main()
+{
+#if !defined(TEXEL_AA) || !defined(TEXEL_AA_FEATURE)
+	vec4 diffuse = texture2D( TEXTURE_0, uv );
+#else
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv );
+#endif
+
+#ifdef ALPHA_TEST
+	if(diffuse.a < 0.5)
+		discard;
+#endif
+
+	gl_FragColor = CURRENT_COLOR * diffuse;
+
+#ifdef CUBEMAP
+
+float CCMST = mix(1.0,0.0,pow(max(min(1.0-FOG_COLOR.r*1.5,1.0),0.0),1.2));
+
+vec4 CT = texture2D(TEXTURE_1, vec2(0.0,1.0));
+float ST = (CT.r - 0.5) / 0.5;
+ST = max(0.0, min(1.0, ST));
+
+float TD = (CCMST);
+float TS = (0.5-abs(0.5-ST));
+float TN = (1.0-CCMST);
+
+float WRain = (1.0-pow(FOG_CONTROL.y,5.0));
+
+vec2 CMST = vec2 (0.0,0.501);
+
+vec2 CMNT = vec2 (0.501,0.0);
+
+vec2 CMDT = vec2(0.499,0.499);
+
+vec4 N = texture2D(TEXTURE_0,uv*CMDT+CMNT);
+
+vec4 D = texture2D(TEXTURE_0,uv*CMDT);
+
+vec4 S = texture2D(TEXTURE_0,uv*CMDT+CMST);
+
+D = D * 1.0;
+
+S = S * 2.25;
+
+N = N * 1.0;
+
+D = D * TD;
+
+S = S * TS;
+
+N = N * TN;
+
+vec4 D_and_S = (1.0-S.a)*D+S.a*S;
+
+vec4 CMC = (1.0-N.a)*D_and_S+N.a*N;
+
+CMC -= CMC*WRain;
+
+gl_FragColor = CMC;
+
+#endif
+}

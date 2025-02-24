@@ -1,0 +1,15 @@
+// __multiversion__
+#include "fragmentVersionSimple.h"
+#include "uniformShaderConstants.h"
+
+uniform float TOTAL_REAL_WORLD_TIME;
+
+void main()
+{
+	vec3 chroma = 0.5 + 0.5 * cos(TOTAL_REAL_WORLD_TIME + vec3(0.0, 2.0, 4.0));
+	gl_FragColor = vec4(chroma, 1.0);
+
+	#if defined(FORCE_DEPTH_ZERO) && __VERSION__ >= 300
+		gl_FragDepth = 0.0;
+	#endif
+}

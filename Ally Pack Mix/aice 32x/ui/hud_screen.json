@@ -1,0 +1,22 @@
+/*File modified by @CrisXolt. //(c) Don't use any code design without permission!*/ 
+{ 
+	"hotbar_slot_image": { 
+		"alpha": 1.0 
+	}, 
+	
+	"gui_hotbar_grid_item/hotbar_parent": { 
+		"layer": 10 
+	}, 
+	
+	"exp_progress_bar_and_hotbar/resizing_xp_bar_with_hotbar/empty_progress_bar": { 
+		"texture": "textures/ui/experiencebarempty" 
+	}, 
+	
+	"exp_progress_bar_and_hotbar/resizing_xp_bar_with_hotbar/empty_progress_bar/full_progress_bar": { 
+		"texture": "textures/ui/experiencebarfull" 
+	}, 
+	
+	"exp_progress_bar_and_hotbar/resizing_xp_bar_with_hotbar/empty_progress_bar/full_progress_bar/progress_bar_nub": { 
+		"type": "panel" 
+	}
+}

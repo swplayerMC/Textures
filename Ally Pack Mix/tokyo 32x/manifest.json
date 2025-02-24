@@ -1,0 +1,30 @@
+{
+  "header": {
+    "uuid": "8b509356-058c-44c7-9888-551de78717f6",
+    "name": "§l§f東京 To§ckyo",
+    "description": "§b by Pengwin",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      2,
+      6
+    ]
+  },
+  "modules": [
+    {
+      "description": "§fTo§bkyo",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "uuid": "e4a33939-9efb-4e94-9db9-afd3a2ec4725",
+      "type": "resources"
+    }
+  ],
+  "format_version": 1
+}

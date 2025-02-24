@@ -1,0 +1,15 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "common_dx",
+
+  "global_label": {
+    "type": "label",
+    "font_type": "normal"
+  },
+
+  "global_label_numbers": {
+    "type": "label",
+    "font_type": "normal"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "xp_number_panel":{
+    "controls": [
+      { 
+        "xp_number_label@CrisXolt_anm_xp_number.xp_number_panel":{
+          "offset": [ 0, 0 ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+#include "ShaderConstants.fxh"
+#include "Util.fxh"
+
+#include "function/tonemap.hlsl"
+
+struct PS_Input {
+	float4 position : SV_Position;
+	float4 texCoords : TEXCOORD_0_FB_MSAA;
+	
+	#ifdef ENABLE_LIGHT
+		float4 light : LIGHT;
+	#endif
+	#ifdef ENABLE_FOG
+		float4 fogColor : FOG_COLOR;
+	#endif
+	#ifndef DISABLE_TINTING
+		float4 color : COLOR;
+	#endif
+
+	float4 haze : HAZE;
+};
+
+struct PS_Output
+{
+	float4 color : SV_Target;
+};
+
+ROOT_SIGNATURE
+void main(in PS_Input PSInput, out PS_Output PSOutput)
+{
+	float4 diffuse = TEXTURE_0.Sample(TextureSampler0, PSInput.texCoords.xy);
+	float4 base = TEXTURE_0.Sample(TextureSampler0, PSInput.texCoords.zw);
+
+	#ifndef DISABLE_TINTING
+		base.a = lerp(diffuse.r * diffuse.a, diffuse.a, PSInput.color.a);
+		base.rgb *= PSInput.color.rgb;
+	#endif
+
+	#ifdef ENABLE_LIGHT
+		base.rgb *= PSInput.light.rgb;
+	#endif
+
+	base.rgb = GBias(base.rgb);
+
+	#ifdef ENABLE_FOG
+		base.rgb = lerp(base.rgb, PSInput.fogColor.rgb, PSInput.fogColor.a );
+	#endif
+
+	base.rgb = lerp(base.rgb, PSInput.haze.rgb, PSInput.haze.a);
+	PSOutput.color = base;
+
+	#ifdef UI_ENTITY
+		PSOutput.color.a *= HUD_OPACITY;
+	#endif
+
+	#ifdef VR_FEATURE
+		// On Rift, the transition from 0 brightness to the lowest 8 bit value is abrupt, so clamp to 
+		// the lowest 8 bit value.
+		PSOutput.color = max(PSOutput.color, 1 / 255.0f);
+	#endif
+}
